@@ -235,7 +235,8 @@ public class MainActivity extends WebViewExtActivity implements
     @Override
     protected void onStart() {
         super.onStart();
-        registerReceiver(mUrlResolvedReceiver, new IntentFilter(ACTION_URL_RESOLVED));
+        ContextCompat.registerReceiver(this, mUrlResolvedReceiver,
+                new IntentFilter(ACTION_URL_RESOLVED), ContextCompat.RECEIVER_NOT_EXPORTED);
     }
 
     @Override

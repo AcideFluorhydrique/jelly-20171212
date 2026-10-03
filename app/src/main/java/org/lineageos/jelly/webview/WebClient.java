@@ -201,10 +201,12 @@ class WebClient extends WebViewClient {
         }
 
         Intent changeIntent = new Intent(MainActivity.ACTION_URL_RESOLVED)
+                .setPackage(ourPackageName)
                 .addFlags(Intent.FLAG_RECEIVER_REGISTERED_ONLY)
                 .putExtra(MainActivity.EXTRA_URL, url);
         PendingIntent pi = PendingIntent.getBroadcast(context, 0, changeIntent,
-                PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_ONE_SHOT);
+                PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_ONE_SHOT
+                        | PendingIntent.FLAG_MUTABLE);
 
         Intent chooserIntent = Intent.createChooser(lastIntent, null);
         chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS,
