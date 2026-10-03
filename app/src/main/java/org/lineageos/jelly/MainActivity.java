@@ -92,7 +92,7 @@ import java.lang.ref.WeakReference;
 public class MainActivity extends WebViewExtActivity implements
          SearchBarController.OnCancelListener {
     private static final String TAG = MainActivity.class.getSimpleName();
-    private static final String PROVIDER = "org.lineageos.jelly.fileprovider";
+    private static final String PROVIDER = "at.xtools.lineageos.jelly.fileprovider";
     private static final String EXTRA_INCOGNITO = "extra_incognito";
     private static final String EXTRA_DESKTOP_MODE = "extra_desktop_mode";
     public static final String EXTRA_URL = "extra_url";

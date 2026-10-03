@@ -93,8 +93,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
 
         <provider
-            android:name="android.support.v4.content.FileProvider"
-            android:authorities="org.lineageos.jelly.fileprovider"
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="at.xtools.lineageos.jelly.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
@@ -104,12 +104,12 @@
 
         <provider
             android:name=".favorite.FavoriteProvider"
-            android:authorities="org.lineageos.jelly.favorite"
+            android:authorities="at.xtools.lineageos.jelly.favorite"
             android:exported="false" />
 
         <provider
             android:name=".history.HistoryProvider"
-            android:authorities="org.lineageos.jelly.history"
+            android:authorities="at.xtools.lineageos.jelly.history"
             android:exported="false" />
 
         <meta-data

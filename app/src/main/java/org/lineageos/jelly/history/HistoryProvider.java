@@ -32,7 +32,7 @@ import androidx.annotation.Nullable;
 
 public class HistoryProvider extends ContentProvider {
     public interface Columns extends BaseColumns {
-        String AUTHORITY = "org.lineageos.jelly.history";
+        String AUTHORITY = "at.xtools.lineageos.jelly.history";
         Uri CONTENT_URI = Uri.parse("content://" + AUTHORITY + "/history");
 
         String TITLE = "title";

@@ -23,7 +23,7 @@
         <intent
             android:action="android.intent.action.VIEW"
             android:targetClass="org.lineageos.jelly.MainActivity"
-            android:targetPackage="org.lineageos.jelly">
+            android:targetPackage="at.xtools.lineageos.jelly">
             <extra
                 android:name="extra_incognito"
                 android:value="true" />

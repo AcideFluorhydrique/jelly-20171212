@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     // 加上 namespace，AGP 8.x 強制要求
-    namespace 'at.xtools.lineageos.jelly'
+    namespace 'org.lineageos.jelly'
     
     // compileSdk 從 25 升到 34
     compileSdk 34
