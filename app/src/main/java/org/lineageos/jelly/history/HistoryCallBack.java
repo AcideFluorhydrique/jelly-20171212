@@ -23,8 +23,8 @@ import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import androidx.core.content.ContextCompat;
-import androidx.appcompat.widget.RecyclerView;
-import androidx.appcompat.widget.helper.ItemTouchHelper;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.ItemTouchHelper;
 import android.view.View;
 
 import org.lineageos.jelly.R;

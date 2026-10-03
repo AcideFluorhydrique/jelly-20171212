@@ -25,7 +25,7 @@ import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.graphics.Bitmap;
 import android.net.Uri;
-import com.google.android.material.Snackbar;
+import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AlertDialog;
 import android.text.TextUtils;
 import android.view.LayoutInflater;

@@ -14,7 +14,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Set up JDK 17
-      uses: actions/setup-java@v4
+      uses: actions/setup-java@v5
       with:
         java-version: '17'
         distribution: 'temurin'
@@ -31,7 +31,7 @@ jobs:
     - name: Report build errors
       if: failure()
       run: |
-        msg=$(grep -E -A3 'error:|ERROR|FAILED|What went wrong' build.log | head -c 3500 | sed -e 's/%/%25/g' | sed -e ':a;N;$!ba;s/\n/%0A/g')
+        msg=$(grep -E -A3 'error:|ERROR|FAILED|What went wrong' build.log | tail -c 3800 | sed -e 's/%/%25/g' | sed -e ':a;N;$!ba;s/\n/%0A/g')
         echo "::error title=Build errors::$msg"
 
     - name: Upload APK
