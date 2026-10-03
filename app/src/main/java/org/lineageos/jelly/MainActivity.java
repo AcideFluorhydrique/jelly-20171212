@@ -334,7 +334,7 @@ public class MainActivity extends WebViewExtActivity implements
                     R.style.AppTheme_PopupMenuOverlapAnchor);
 
             PopupMenu popupMenu = new PopupMenu(wrapper, menu, Gravity.NO_GRAVITY,
-                    R.attr.actionOverflowMenuStyle, 0);
+                    androidx.appcompat.R.attr.actionOverflowMenuStyle, 0);
             popupMenu.inflate(R.menu.menu_main);
 
             MenuItem desktopMode = popupMenu.getMenu().findItem(R.id.desktop_mode);
